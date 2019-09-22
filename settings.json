@@ -20,9 +20,7 @@
             "after": [
                 "$"
             ],
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
+        },
         {
             "before": [
                 "<Space>"
@@ -30,7 +28,7 @@
             "after": [
                 "<Leader>","<Leader>","s"
             ],
-        }
+        },
     ],
     "python.venvPath": ".venv",
     "python.pythonPath": "venv/Scripts/python.exe",
