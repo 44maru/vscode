@@ -5,7 +5,8 @@
     "vim.insertModeKeyBindingsNonRecursive": [
         {
             "before": [
-                "j","j"
+                "j",
+                "j"
             ],
             "after": [
                 "<Esc>"
@@ -26,17 +27,22 @@
                 "<Space>"
             ],
             "after": [
-                "<Leader>","<Leader>","s"
+                "<Leader>",
+                "<Leader>",
+                "s"
             ],
         },
     ],
     "python.venvPath": ".venv",
     "python.pythonPath": "venv/Scripts/python.exe",
     "explorer.confirmDelete": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "terminal.integrated.rendererType": "dom",
     "files.autoGuessEncoding": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.jediEnabled": false,
+    "editor.formatOnSave": true,
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
 }

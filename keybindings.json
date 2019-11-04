@@ -40,12 +40,9 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
-        "key": "oem_plus q",
-        "command": "python.execInTerminal"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "-workbench.action.files.newUntitledFile"
+        "key": "ctrl+alt+n",
+        "command": "-workbench.action.files.newUntitledFile",
+        "when": "!editorTextFocus && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
     },
     {
         "key": "ctrl+n",
@@ -53,8 +50,18 @@
         "when": "editorTextFocus && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
     },
     {
+        "key": "ctrl+p",
+        "command": "workbench.action.openPreviousRecentlyUsedEditorInGroup",
+        "when": "editorTextFocus && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    },
+    {
         "key": "ctrl+n",
         "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
         "when": "inEditorsPicker && inQuickOpen"
     },
     {
@@ -68,5 +75,41 @@
     {
         "key": "shift+alt+m",
         "command": "python.refactorExtractMethod"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build"
+    },
+    {
+        "key": "oem_plus q",
+        "command": "python.execInTerminal",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "oem_plus q",
+        "command": "workbench.action.tasks.runTask",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "oem_plus q",
+        "command": "workbench.action.tasks.runTask",
+        "args": "runGo",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "explorer.newFile"
     },
 ]
