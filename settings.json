@@ -36,7 +36,7 @@
     "python.venvPath": ".venv",
     "python.pythonPath": "venv/Scripts/python.exe",
     "explorer.confirmDelete": false,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "terminal.integrated.rendererType": "dom",
     "files.autoGuessEncoding": true,
     "editor.suggestSelection": "first",
