@@ -1,48 +1,42 @@
 {
-    "vim.leader": ";",
-    "vim.easymotion": true,
-    "vim.useSystemClipboard": true,
-    "vim.insertModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ],
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<C-l>"
-            ],
-            "after": [
-                "$"
-            ],
-        },
-        {
-            "before": [
-                "<Space>"
-            ],
-            "after": [
-                "<Leader>",
-                "<Leader>",
-                "s"
-            ],
-        },
-    ],
-    "python.venvPath": ".venv",
-    "python.pythonPath": "venv/Scripts/python.exe",
-    "explorer.confirmDelete": false,
-    "window.zoomLevel": 0,
-    "terminal.integrated.rendererType": "dom",
-    "files.autoGuessEncoding": true,
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.jediEnabled": false,
-    "editor.formatOnSave": true,
-    "go.formatTool": "goimports",
-    "go.useLanguageServer": true,
+  "vim.leader": ";",
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  //"vim.statusBarColorControl": false,
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-l>"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<Space>"],
+      "after": ["<Leader>", "<Leader>", "s"]
+    }
+  ],
+  "vim.handleKeys": {
+    "": true,
+    "": true,
+    "": true
+  },
+  "python.venvPath": ".venv",
+  "explorer.confirmDelete": false,
+  "window.zoomLevel": 0,
+  "terminal.integrated.rendererType": "dom",
+  "files.autoGuessEncoding": true,
+  "editor.suggestSelection": "first",
+  //"editor.quickSuggestions": false,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": false,
+  "editor.formatOnSave": true,
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "git.suggestSmartCommit": false,
+  "python.defaultInterpreterPath": "venv/Scripts/python.exe",
+  "python.languageServer": "Microsoft"
 }

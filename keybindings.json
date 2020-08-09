@@ -1,163 +1,172 @@
 // 既定値を上書きするには、このファイル内にキー バインドを挿入しますauto[]
 [
-    {
-        "key": "ctrl+j",
-        "command": "-workbench.action.togglePanel"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "extension.vim_escape",
-        "when": "editorTextFocus && vim.active && !inDebugRepl"
-    },
-    {
-        "key": "escape",
-        "command": "extension.vim_escape",
-        "when": "editorTextFocus && vim.active && !inDebugRepl"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "selectNextSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "selectPrevSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-    },
-    {
-        "key": "ctrl+1",
-        "command": "editor.action.showHover",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k",
-        "command": "editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
-    },
-    {
-        "key": "f12",
-        "command": "-editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
-    },
-    {
-        "key": "ctrl+alt+n",
-        "command": "-workbench.action.files.newUntitledFile",
-        "when": "!editorTextFocus && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "workbench.action.openNextRecentlyUsedEditorInGroup",
-        "when": "editorTextFocus && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "workbench.action.openPreviousRecentlyUsedEditorInGroup",
-        "when": "editorTextFocus && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
-    },
-    {
-        "key": " ctrl+tab",
-        "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
-        "when": "inEditorsPicker && inQuickOpen"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
-        "when": "inEditorsPicker && inQuickOpen"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "ctrl+f4",
-        "command": "-workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "shift+alt+m",
-        "command": "python.refactorExtractMethod"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-workbench.action.tasks.build"
-    },
-    {
-        "key": "oem_plus q",
-        "command": "python.execInTerminal",
-        "when": "editorFocus && vim.mode == 'Normal'"
-    },
-    {
-        "key": "oem_plus q",
-        "command": "workbench.action.tasks.runTask",
-        "when": "editorFocus && vim.mode == 'Normal'"
-    },
-    {
-        "key": "oem_plus q",
-        "command": "workbench.action.tasks.runTask",
-        "args": "runGo",
-        "when": "editorFocus && vim.mode == 'Normal'"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "-workbench.action.files.newUntitledFile"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "-workbench.action.quickOpen"
-    },
-    {
-        "key": "ctrl+shift+h",
-        "command": "workbench.action.quickOpen"
-    },
-    {
-        "key": "ctrl+alt+n",
-        "command": "explorer.newFile"
-    },
-    // Move Editor -> Terminal
-    {
-        "key": "ctrl+oem_plus",
-        "command": "workbench.action.terminal.focus",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+j",
-        "command": "workbench.action.terminal.focus",
-        "when": "editorTextFocus"
-    },
-    // Move Terminal -> Editor
-    {
-        "key": "ctrl+oem_plus",
-        "command": "workbench.action.focusFirstEditorGroup",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "alt+k",
-        "command": "workbench.action.focusFirstEditorGroup",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+oem_plus",
-        "command": "-workbench.action.zoomIn"
-    },
-    // Move Editor -> Explorer
-    {
-        "key": "alt+h",
-        "command": "workbench.explorer.fileView.focus",
-        "when": "terminalFocus"
-    },
-    // Move Terminal -> Explorer
-    {
-        "key": "alt+h",
-        "command": "workbench.explorer.fileView.focus",
-        "when": "editorTextFocus"
-    },
-    // Move Explorer -> Editor
-    {
-        "key": "alt+l",
-        "command": "workbench.action.focusFirstEditorGroup",
-        "when": "explorerFocus"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "-workbench.action.toggleSidebarVisibility"
-    },
+  {
+    "key": "ctrl+j",
+    "command": "-workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "extension.vim_escape",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "escape",
+    "command": "extension.vim_escape",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "selectNextSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "selectPrevSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+1",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "f12",
+    "command": "-editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-workbench.action.files.newUntitledFile",
+    "when": "!editorTextFocus && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.openNextRecentlyUsedEditorInGroup",
+    "when": "editorTextFocus && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.openPreviousRecentlyUsedEditorInGroup",
+    "when": "editorTextFocus && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+  },
+  {
+    "key": " ctrl+tab",
+    "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+f4",
+    "command": "-workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "shift+alt+m",
+    "command": "python.refactorExtractMethod"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "-workbench.action.tasks.build"
+  },
+  {
+    "key": "oem_plus q",
+    "command": "python.execInTerminal",
+    "when": "editorFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "oem_plus q",
+    "command": "workbench.action.tasks.runTask",
+    "when": "editorFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "oem_plus q",
+    "command": "workbench.action.tasks.runTask",
+    "args": "runGo",
+    "when": "editorFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "explorer.newFile"
+  },
+  // Move Editor -> Terminal
+  {
+    "key": "ctrl+oem_plus",
+    "command": "workbench.action.terminal.focus",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "workbench.action.terminal.focus",
+    "when": "editorTextFocus"
+  },
+  // Move Terminal -> Editor
+  {
+    "key": "ctrl+oem_plus",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+k",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+oem_plus",
+    "command": "-workbench.action.zoomIn"
+  },
+  // Move Editor -> Explorer
+  {
+    "key": "alt+h",
+    "command": "workbench.explorer.fileView.focus",
+    "when": "terminalFocus"
+  },
+  // Move Terminal -> Explorer
+  {
+    "key": "alt+h",
+    "command": "workbench.explorer.fileView.focus",
+    "when": "editorTextFocus"
+  },
+  // Move Explorer -> Editor
+  {
+    "key": "alt+l",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "explorerFocus"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-editor.action.toggleTabFocusMode"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-extension.vim_ctrl+m",
+    "when": "editorTextFocus && vim.active && vim.use<C-m> && !inDebugRepl || vim.active && vim.use<C-m> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-m> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "workbench.action.toggleMaximizedPanel"
+  }
 ]
