@@ -77,6 +77,10 @@
     "command": "python.refactorExtractMethod"
   },
   {
+    "key": "shift+alt+m",
+    "command": "go.godoctor.extract"
+  },
+  {
     "key": "ctrl+shift+b",
     "command": "-workbench.action.tasks.build"
   },
@@ -168,5 +172,27 @@
   {
     "key": "ctrl+m",
     "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "alt+o",
+    "command": "workbench.action.gotoSymbol"
+  },
+  // list method
+  {
+    "key": "ctrl+shift+o",
+    "command": "-workbench.action.gotoSymbol"
+  },
+  // show method call hierarchy
+  {
+    "key": "ctrl+h",
+    "command": "references-view.showCallHierarchy",
+    "when": "editorHasCallHierarchyProvider"
+  },
+  {
+    "key": "shift+alt+h",
+    "command": "-references-view.showCallHierarchy",
+    "when": "editorHasCallHierarchyProvider"
   }
+
+
 ]
