@@ -192,7 +192,17 @@
     "key": "shift+alt+h",
     "command": "-references-view.showCallHierarchy",
     "when": "editorHasCallHierarchyProvider"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+alt+[Minus]",
+    "command": "-workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "workbench.action.navigateForward"
   }
-
-
 ]
