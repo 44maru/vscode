@@ -38,5 +38,16 @@
   "go.useLanguageServer": true,
   "git.suggestSmartCommit": false,
   "python.defaultInterpreterPath": "venv/Scripts/python.exe",
-  "python.languageServer": "Microsoft"
+  "python.languageServer": "Microsoft",
+  // Need go get -u github.com/segmentio/golines and PATH includes GOHOME/bin
+  // https://github.com/segmentio/golines
+  "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "\\.go$",
+                "cmd": "golines ${file} -w"
+            }
+        ]
+    }
+
 }
