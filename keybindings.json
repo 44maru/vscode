@@ -170,10 +170,6 @@
     "when": "editorTextFocus && vim.active && vim.use<C-m> && !inDebugRepl || vim.active && vim.use<C-m> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-m> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
   },
   {
-    "key": "ctrl+m",
-    "command": "workbench.action.toggleMaximizedPanel"
-  },
-  {
     "key": "alt+o",
     "command": "workbench.action.gotoSymbol"
   },
@@ -204,5 +200,20 @@
   {
     "key": "ctrl+i",
     "command": "workbench.action.navigateForward"
-  }
+  },
+  {
+    "key": "ctrl+m",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "workbench.action.closePanel",
+    "when": "editorFocus && panelIsOpen"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "workbench.action.togglePanel",
+    "when": "editorFocus && !panelIsOpen"
+  },
 ]
